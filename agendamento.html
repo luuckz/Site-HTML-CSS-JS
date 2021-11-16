@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link rel=" stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <title>Bates Hotel</title>
+</head>
+
+<body>
+    <header class="menu_principal">
+        <main>
+            <div class="header_1">
+                <div class="logo">
+                    <img src="./img/logo.png">
+                </div>
+                <div class="redes_sociais">
+                    <ul>
+                        <li><a href="https://github.com/luuckz"><img src="./img/web.png"></a></li>
+                        <li><a href="https://www.facebook.com/lucas.estevam.7315/"><img src="./img/facebook.png"></a>
+                        </li>
+                        <li><a href="https://twitter.com/luuc_es"><img src="./img/twitter.png"></a></li>
+                        <li><a href="https://www.linkedin.com/in/lucas-estevam-266401194/"><img
+                                    src="./img/linkedin.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </header>
+    <main class="col_100 menu_url">
+        <div class="header_2">
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./agendamento.html">Agendamento</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="busca">
+                <input placeholder="Busque Algo" type="text" />
+            </div>
+        </div>
+    </main>
+    <div class="col_100 preços">
+        <h1 id="titulo">Preços</h1>
+        <p><strong>Quarto normal: R$100 p/Noite</strong></p>
+        <p><strong>Quarto com piscina: $R150 p/Noite</strong></p>
+        <p><strong>Quarto Vip (piscina, hidromassagem e sauna): R$250 p/Noite </strong></p>
+        <p><strong>Quarto Deluxe (Cama ultra confortável + anteriores): R$340 p/Noite</strong></p>
+    </div>
+
+    <div>
+        <h1 id="titulo">Formulário de Agendamento</h1>
+        <p id="subtitulo"><strong>Realize aqui sua visita ao Bates Hotel</strong></p>
+        <br>
+    </div>
+
+    <form class="formulario">
+        <div class="campo">
+            <label for="nome"><strong>Nome:</strong></label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+
+        <div class="campo">
+            <label for="sobrenome"><strong>Sobrenome:</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+
+        <div class="campo">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Qual o seu gênero?</strong></label>
+            <label>
+                <input type="radio" name="genero" value="masculino" checked>Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="feminino">Feminino
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="hospedes"><strong>Quantidade de hóspedes:</strong></label>
+            <select id="hospedes">
+                <option selected disabled value="">Selecione...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label><strong>Dia de chegada:</strong></label>
+            <input type="date" name="chegada" id="chegada">
+        </div>
+
+        <div class="campo">
+            <label><strong>Dia de saída:</strong></label>
+            <input type="date" name="saida" id="saida">
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Escolha o quarto que deseja:</strong></label><br><br>
+                <label><input type="radio" name="quarto" value="comum" checked>Quarto Comum</label>
+                <label><input type="radio" name="quarto" value="piscina">Quarto c/Piscina</label>
+                <label><input type="radio" name="quarto" value="vip">Quarto VIP</label>
+                <label><input type="radio" name="quarto" value="deluxe">Quarto Deluxe</label>
+            </div>
+        </fieldset>
+
+        <button class="botao" type="submit" onsubmit="">Enviar</button>
+
+    </form>
+
+    <footer>
+        <div class="col_100 footer-2">
+            <div class="content">
+                <p>
+                    ©2021 Lucas Estevam, Matricula: 202102538688.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
